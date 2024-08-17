@@ -1,19 +1,26 @@
+"use client";
+
 import { IBounty } from '@/models/bounty.model'
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import BountyPopUp from './BountyPopUp'
+import { useState } from 'react'
 
 type BountyCardProps = {
     bounty: IBounty,
+    isOpen: boolean;
+    setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const BountyCard = ({ bounty }: BountyCardProps) => {
+const BountyCard = ({ bounty, isOpen, setIsOpen }: BountyCardProps) => {
     return(
-        <Link
+        <div
         className ="
             flex h-40 w-full outline outline-slate-400 rounded-lg
             hover:cursor-pointer transorm transition duration-300 hover:translate-x-2 hover:shadow-lg"
-        href={`/bounty/${bounty._id}`}
+        // href={`/bounty/${bounty._id}`}
+        onClick = {() => setIsOpen(true)}
         >
 
             <Image
@@ -34,8 +41,7 @@ const BountyCard = ({ bounty }: BountyCardProps) => {
                     <p className = "text-green-300">{`${bounty.reward} ${bounty.currency}`}</p>
                 </div>
             </div>
-
-        </Link>
+        </div>
     )
 }
 

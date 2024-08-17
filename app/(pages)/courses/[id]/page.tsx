@@ -49,11 +49,11 @@ const CoursePage = ({ params: { id } ,searchParams }: SearchParamProps) => {
         {showSidebar && (
           <CoursePageSidebar course={course} pageId={page} />
         )}
-        {/* hidden as per mario request */}
-        <div className="w-full flex flex-col text-black z-99 opacity-0"> 
-          {isCourseCreator && (
+        <div className="w-full flex flex-col text-black z-99"> 
+          {/* hide as per mario's request */}
+          {/* {isCourseCreator && (
            <PageCreatorControls course={course} isEditing={isEditing} setIsEditing={setIsEditing} />
-          )}
+          )} */}
           
           {isEditing && (
             <TextEditor data={value} onDataChanged={setValue} />
