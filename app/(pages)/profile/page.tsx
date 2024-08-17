@@ -8,6 +8,8 @@ import CourseCard from "@/components/CourseCard";
 
 const ProfilePage = ({searchParams}: SearchParamProps) => {
 
+  const query = searchParams?.q as string || "";
+
   const { data, page, totalPages } = getAllCourses({ query: query.toString() });
 
     return (
