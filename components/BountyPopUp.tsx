@@ -4,7 +4,7 @@ import { Styles } from 'react-modal';
 import { useState } from "react";
 import BountyUpload from '@/components/BountyUpload'
 import { IBounty } from '@/models/bounty.model';
-import uploadFile from '@/utils/ipfs'
+import { uploadFile } from '@/utils/ipfs'
 
 
 type ModalProps = {
