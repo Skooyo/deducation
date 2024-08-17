@@ -35,11 +35,11 @@ const ProfilePage = ({}) => {
                   </div>
                 </div>
     
-                <div className="flex-col p-8">
-                  <div className="pl-14 w-full border-slate-100">
+                <div className="flex-col justify-center pb-3">
+                  <div className="pl-14 w-full border-slate-100 flex-col justify-center items-center">
                   
-                    <h1 className="text-2xl font-bold mb-1">Contributions</h1>
-                    <div className="flex justify-start w-full mt-5">
+                    <h1 className="text-3xl font-bold mb-1 flex justify-center pr-10">Contributions</h1>
+                    <div className="flex justify-center w-full mt-5">
                       <ul className="">
                         <li className="text-xl">☑️Completed Course</li>
                         <li className="text-xl">✅Completed Project</li>
@@ -91,7 +91,7 @@ const ProfilePage = ({}) => {
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 m-5">
                 {data.map(course => (
-                  <CourseCard course={course} key={course._id} />
+                  <ProjectCard course={course} key={course._id} />
                   ))}
               </div>
             </div>
