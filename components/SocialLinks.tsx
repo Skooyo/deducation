@@ -4,7 +4,7 @@ const SocialLinks = () => {
     const imgWidth = 32;
 
     return (
-        <div className="flex justify-between items-center text-gray-500 w-3/4 space-around">
+        <div className="flex justify-between items-center text-gray-500 w-full space-around">
             <a href="https://www.linkedin.com/in/samuel-abera-6593a2209/">
                 <Image 
                     className="m-3"
@@ -17,7 +17,7 @@ const SocialLinks = () => {
             </a>
             <a href="https://github.com">
                 <Image 
-                    className="m-3"
+                    className="m-3 rounded-full"
                     src="/github.png" width={imgWidth}height={imgWidth}alt="test" />
             </a>
             <a href="https://www.youtube.com/@silentcoder7">
