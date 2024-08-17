@@ -12,29 +12,54 @@ export const tempCourses: ICourse[] = [
       {
         _id: "1",
         title: "Introduction to Blockchain Technology",
-        content:"<h1>Introduction to Blockchain Technology</h1>\
-        <br>\
-        <img src='https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/Blockchain%20Technology.jpg' alt='blockchain' width='810' height='405' >\
-        <br>\
-        <h3>Blockchain is a revolutionary technology that has transformed the way we think about data, transactions,\
-         and trust in the digital age. At its core, blockchain is a decentralized, distributed ledger that records transactions across multiple computers\
-          in a way that ensures the data is secure, transparent, and immutable. Unlike traditional centralized systems where a single entity controls the data,\
-           blockchain operates on a peer-to-peer network where all participants have access to the same information simultaneously.</h3>\
-         <br>\
-        <h3>This technology is most widely known as the foundation of cryptocurrencies like Bitcoin, but its applications extend far beyond digital currencies.\
-         Blockchain can be used in a variety of sectors, including finance, supply chain management, healthcare, and even education.</h3>\
-        <br>\
-        <h3>Its key features—decentralization, transparency, and security—enable new forms of collaboration and innovation, \
-        making it a powerful tool for reshaping industries and enhancing trust in digital transactions.</h3>\
-        <br>\
-        <h3>By eliminating the need for intermediaries and providing a secure, tamper-proof record of transactions, \
-        blockchain has the potential to increase efficiency, reduce costs, and foster greater accountability in various processes. \
-        As we continue to explore its possibilities, blockchain is poised to play a crucial role in the future of technology and global development.</h3>"
+        content:[{
+          type:"h1",
+          data:"Introduction to Blockchain Technology"
+        },
+        {
+          type:"img",
+          data:"https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/Blockchain%20Technology.jpg"
+        },
+        {
+          type:"h3",
+          data:"Blockchain is a revolutionary technology that has transformed the way we think about data, transactions, and trust in the digital age. At its core, blockchain is a decentralized, distributed ledger that records transactions across multiple computers in a way that ensures the data is secure, transparent, and immutable. Unlike traditional centralized systems where a single entity controls the data, blockchain operates on a peer-to-peer network where all participants have access to the same information simultaneously."
+        },
+        {
+          type:"h3",
+          data:'This technology is most widely known as the foundation of cryptocurrencies like Bitcoin, but its applications extend far beyond digital currencies. Blockchain can be used in a variety of sectors, including finance, supply chain management, healthcare, and even education.'
+        },
+        {
+          type:"h3",
+          data:`Its key features—decentralization, transparency, and security—enable new forms of collaboration and innovation, making it a powerful tool for reshaping industries and enhancing trust in digital transactions.`
+        },
+        {
+          type:"h3",
+          data:'By eliminating the need for intermediaries and providing a secure, tamper-proof record of transactions, blockchain has the potential to increase efficiency, reduce costs, and foster greater accountability in various processes. As we continue to explore its possibilities, blockchain is poised to play a crucial role in the future of technology and global development.'
+        }],
       },
       {
         _id: "2",
-        title: "Page 2",
-        content:"<h1>Test 2</h1><p>Test paragraph</p><p>Hello world</p><h3>Test 2</h3>",
+        title: "The Fundamentals of Blockchain Technology",
+        content:[{
+          type:"h1",
+          data:"The Fundamentals of Blockchain Technology"
+        },
+        {
+          type:"img",
+          data:"https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/Blockchain%20Technology.jpg"
+        },
+        {
+          type:"h3",
+          data:"The foundation of any blockchain course begins with understanding the basic concepts of blockchain technology. At its core, a blockchain is a digital ledger that records transactions across a network of computers."
+        },
+        {
+          type:"h3",
+          data:'These transactions are grouped together in blocks, which are then linked, or "chained," together in a sequential manner, forming a blockchain. Each block contains a list of transactions, a timestamp, and a cryptographic hash of the previous block, ensuring the integrity of the data.'
+        },
+        {
+          type:"h3",
+          data:`This structure makes blockchain a secure and transparent way of recording information. Understanding these fundamentals helps beginners grasp how blockchain operates, how data is stored, and why it is resistant to tampering.`
+        }],
       },
       {
         _id: "3",
