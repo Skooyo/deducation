@@ -57,14 +57,23 @@ const BountyPopUp = ({ bounty, isOpen, setIsOpen }: ModalProps) => {
             setFiles={setFiles}
             onFieldChange={(url: string) => setFormData(prevState =>({ ...prevState, imageUrl: url}))}
             />
+            <div className="flex gap-10 justify-between items-center">
             <button
-              type="button"
-              className="items-center justify-center p-2 py-3 bg-gradient-to-tl from-[#ba3030] to-[#df1b1b]
-              text-background rounded-lg glow-button font-semibold"
               onClick={() => setIsOpen(false)}
+              className="items-center justify-center px-4 py-3 bg-gradient-to-tl bg-primary
+              text-background rounded-lg glow-button font-semibold"
             >
-              Cancel
+              Submit
             </button>
+              <button
+                type="button"
+                className="items-center justify-center p-2 py-3 bg-gradient-to-tl from-[#ba3030] to-[#df1b1b]
+                text-background rounded-lg glow-button font-semibold"
+                onClick={() => setIsOpen(false)}
+                >
+                Cancel
+              </button>
+            </div>
         </div>
       </Modal>
     </div>

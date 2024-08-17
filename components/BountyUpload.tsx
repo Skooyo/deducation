@@ -45,7 +45,7 @@ const BountyUpload = ({ imageUrl, onFieldChange, setFiles }: BountyUploadProps) 
           <img src="/assets/icons/upload.svg" width={77} height={77} alt="file upload" />
           <h3 className="mb-2 mt-2 text-white text-opacity-50">Drag & Drop</h3>
           <p className="p-medium-12 mb-4 text-xs text-white text-opacity-50">ZIP</p>
-          <button type="button" className="rounded-md bg-primary text-background p-3">
+          <button type="button" className="rounded-md bg-[#bebebe] text-background p-3">
             Select from computer
           </button>
         </div>

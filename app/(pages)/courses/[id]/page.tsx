@@ -13,6 +13,7 @@ import DOMPurify from 'dompurify';
 import { createNewUrl } from '@/utils/url';
 import PageCreatorControls from '@/components/PageCreatorControls';
 import { SearchParamProps } from '@/types';
+import Link from 'next/link';
 
 interface PageContent {
   type: string;
@@ -25,7 +26,9 @@ const CoursePage = ({ params: { id } ,searchParams }: SearchParamProps) => {
   const router = useRouter();
   // const searchParams = useSearchParams();
   const page = searchParams?.page as string || "1";
-
+  let num_of_pages = "1";
+  
+  const [isLastPage, setIsLastPage] = useState<boolean>(false)
   const [isEditing, setIsEditing] = useState<boolean>(false)
   const [showSidebar, setShowSidebar] = useState<boolean>(true)
   const [value, setValue] = useState<string>(course?.pages[Number(page) - 1].content ?? "");
@@ -43,6 +46,8 @@ const CoursePage = ({ params: { id } ,searchParams }: SearchParamProps) => {
     const newUrl = createNewUrl({ newParam: "page", newValue: page});
     setValue(course?.pages[Number(page) - 1].content ?? "");
     setObjValue(course?.pages[Number(page) - 1].content ?? {})
+    num_of_pages = course?.pages.length
+    setIsLastPage(num_of_pages == page)
 
     router.push(newUrl);
   }, [router, page])
@@ -66,17 +71,18 @@ const CoursePage = ({ params: { id } ,searchParams }: SearchParamProps) => {
             <TextEditor data={value} onDataChanged={setValue} />
           )}
 
+          {/* idk what i did but it works */}
           {!isEditing && (objValue.map((data, index) => {
-            console.log(data)
+            // console.log(data)
             if(data.type == "h3") {
               return(
-                <div key={index} className="text-white m-2 mx-5 text-xl">
+                <div key={index} className="text-white m-5 px-40 text-xl">
               {React.createElement(data.type, {}, data.data)}
             </div>
             )
           } else if (data.type == "h1") {
             return(
-              <div key={index} className="text-white font-semibold text-3xl m-2 flex items-center justify-center mx-5">
+              <div key={index} className="text-white font-semibold text-3xl m-5 flex items-center justify-center mx-30 pt-8">
                 {React.createElement(data.type, {}, data.data)}
               </div>
             )
@@ -88,12 +94,26 @@ const CoursePage = ({ params: { id } ,searchParams }: SearchParamProps) => {
             )
           }}))}
 
+          {isLastPage && (
+            <Link 
+            className="w-full justify-center items-center flex pt-16"
+            href={`/courses`}>
+              <button
+                className="items-center justify-center px-4 py-3 bg-gradient-to-tl from-[#f5ff45] to-[#26e400]
+                text-background rounded-lg glow-button font-semibold w-fit"
+                >
+                Finish Course
+              </button>
+            </Link>
+          )}
+
           {/* {!isEditing && (
             <div
               dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(value) }}
               className="text-white text-xl ck-content px-10 pt-4 z-1 relatve m-2"
             />
           )} */}
+
         </div>
       </div>
     </div>

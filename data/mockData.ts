@@ -4,8 +4,8 @@ import { IBounty } from "@/models/bounty.model";
 export const tempCourses: ICourse[] = [
   {
     _id: "1",
-    title: "Course 1",
-    description: "This is course 1",
+    title: "Introduction to Blockchain",
+    description: "Learn about Blockchain through this introductory course!",
     coverImageUrl: "https://picsum.photos/1920/1080",
     creator: "1",
     pages: [
@@ -45,10 +45,6 @@ export const tempCourses: ICourse[] = [
           data:"The Fundamentals of Blockchain Technology"
         },
         {
-          type:"img",
-          data:"https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/Blockchain%20Technology.jpg"
-        },
-        {
           type:"h3",
           data:"The foundation of any blockchain course begins with understanding the basic concepts of blockchain technology. At its core, a blockchain is a digital ledger that records transactions across a network of computers."
         },
@@ -63,21 +59,86 @@ export const tempCourses: ICourse[] = [
       },
       {
         _id: "3",
-        title: "Page 3",
-        content:"<h1>Test 3</h1><p>Test paragraph</p><p>Hello world</p><h3>Test 2</h3>",
+        title: "Decentralization and Distributed Ledger Technology (DLT)",
+        content:[{
+          type:"h1",
+          data:"Decentralization and Distributed Ledger Technology (DLT)"
+        },
+        {
+          type:"h3",
+          data:"One of the most transformative aspects of blockchain is its decentralized nature. Unlike traditional systems where a central authority controls the database, blockchain operates on a peer-to-peer network where no single entity has full control."
+        },
+        {
+          type:"h3",
+          data:"This decentralization is achieved through Distributed Ledger Technology (DLT), which allows all participants in the network to maintain and verify the ledger independently. Each participant, or node, has a copy of the entire blockchain, and they all work together to validate new transactions." 
+        },
+        {
+          type:"h3",
+          data:"This not only increases transparency and security but also reduces the reliance on intermediaries, making processes more efficient and trustless."
+        }],
       },
       {
         _id: "4",
-        title: "Page 4",
-        content:"<h1>Test 4</h1><p>Test paragraph</p><p>Hello world</p><h3>Test 2</h3>",
+        title: "Cryptography and Security",
+        content:[{
+          type:"h1",
+          data:"Cryptography and Security"
+        },
+        {
+          type:"h3",
+          data:"Security is a critical component of blockchain technology, and it is largely achieved through cryptography. Cryptographic techniques, such as hashing and digital signatures, play a vital role in securing the data on a blockchain."
+        },
+        {
+          type:"h3",
+          data:"Hashing involves converting data into a fixed-size string of characters, which is unique to the input data. This ensures that any alteration to the data would result in a completely different hash, making tampering easily detectable."
+        },
+        {
+          type:"h3",
+          data:"Digital signatures use public and private keys to ensure the authenticity of transactions. The combination of these cryptographic methods provides a robust security framework that protects the blockchain from unauthorized access and fraud."
+        }]
       },
       {
         _id: "5",
-        title: "Page 5",
-        content:"<h1>Test 5</h1><p>Test paragraph</p><p>Hello world</p><h3>Test 2</h3>",
+        title: "Blockchain Use Cases and Applications",
+        content:[{
+          type:"h1",
+          data:"Blockchain Use Cases and Applications"
+        },
+        {
+          type:"h3",
+          data:"Blockchain is not limited to just cryptocurrencies; its applications span across various industries. In finance, blockchain enables the creation of decentralized finance (DeFi) platforms that allow users to borrow, lend, and trade assets without relying on traditional banks."
+        },
+        {
+          type:"h3",
+          data:"In supply chain management, blockchain provides a transparent and immutable record of the movement of goods, helping to reduce fraud and increase efficiency. In healthcare, blockchain can be used to securely store and share patient records, ensuring privacy and improving the accuracy of medical data."
+        },
+        {
+          type:"h3",
+          data:"Understanding these diverse applications helps beginners see the broader potential of blockchain technology beyond digital currencies."
+        }],
+      },
+      {
+        _id: "6",
+        title: "Smart Contracts and Decentralized Applications (DApps)",
+        content:[{
+          type:"h1",
+          data:"Smart Contracts and Decentralized Applications (DApps)"
+        },
+        {
+          type:"h3",
+          data:"Smart contracts are self-executing contracts with the terms of the agreement directly written into code. They automatically enforce and execute the terms of a contract when predetermined conditions are met, without the need for intermediaries."
+        },
+        {
+          type:"h3",
+          data:"This feature of blockchain technology opens up new possibilities for automation and efficiency in various industries. Decentralized applications (DApps) are built on top of blockchain platforms and operate using smart contracts. These applications run on a decentralized network, ensuring that they are resistant to censorship and downtime."
+        },
+        {
+          type:"h3",
+          data:"Learning about smart contracts and DApps gives beginners insight into how blockchain technology is being used to create innovative solutions and disrupt traditional business models."
+        }]
       },
     ],
-    category: "Web Development",
+    category: "Blockchain",
   },
   {
     _id: "2",
