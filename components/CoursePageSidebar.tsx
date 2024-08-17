@@ -34,7 +34,7 @@ const CoursePageSidebar = ({ course, pageId }: CoursePageSidebarProps) => {
   }, [])
 
   return (
-    <div className="h-full w-[250px] flex flex-col pt-1 px-1 border-r-[1px] border-secondary">
+    <div className="h-full w-[500px] flex flex-col pt-1 px-1 border-r-[1px] border-secondary">
       {course?.pages.map((page) => (
         <div
           key={page._id}

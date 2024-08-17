@@ -11,14 +11,25 @@ export const tempCourses: ICourse[] = [
     pages: [
       {
         _id: "1",
-        title: "Page 1",
-        content:"<h1>Introduction</h1><p>Science and education are key drivers of global progress, yet both are hindered by traditional limitations. Science is drifting\
-        from its core mission, and education remains stuck in outdated industrial-age practices.</p><p>There is a need for a paradigm shift in the way educational content \
-        is distributed, as well as in the way scientific advances are disseminated and propagated.</p>\
-          <p>Web 3 technologies offer a solution by decentralizing control and fostering open collaboration, enabling educators and learners to overcome\
-           these challenges. With secure, portable credentials provided by blockchain and the incentive of tokenized learning, Web 3 aligns education with the demands\
-            of a modern, knowledge-based world.</p>\
-          <p>Let’s explore more about how Web3 to be use in education</p>"
+        title: "Introduction to Blockchain Technology",
+        content:"<h1>Introduction to Blockchain Technology</h1>\
+        <br>\
+        <img src='https://builtin.com/sites/www.builtin.com/files/styles/ckeditor_optimize/public/inline-images/Blockchain%20Technology.jpg' alt='blockchain' width='810' height='405' >\
+        <br>\
+        <h3>Blockchain is a revolutionary technology that has transformed the way we think about data, transactions,\
+         and trust in the digital age. At its core, blockchain is a decentralized, distributed ledger that records transactions across multiple computers\
+          in a way that ensures the data is secure, transparent, and immutable. Unlike traditional centralized systems where a single entity controls the data,\
+           blockchain operates on a peer-to-peer network where all participants have access to the same information simultaneously.</h3>\
+         <br>\
+        <h3>This technology is most widely known as the foundation of cryptocurrencies like Bitcoin, but its applications extend far beyond digital currencies.\
+         Blockchain can be used in a variety of sectors, including finance, supply chain management, healthcare, and even education.</h3>\
+        <br>\
+        <h3>Its key features—decentralization, transparency, and security—enable new forms of collaboration and innovation, \
+        making it a powerful tool for reshaping industries and enhancing trust in digital transactions.</h3>\
+        <br>\
+        <h3>By eliminating the need for intermediaries and providing a secure, tamper-proof record of transactions, \
+        blockchain has the potential to increase efficiency, reduce costs, and foster greater accountability in various processes. \
+        As we continue to explore its possibilities, blockchain is poised to play a crucial role in the future of technology and global development.</h3>"
       },
       {
         _id: "2",

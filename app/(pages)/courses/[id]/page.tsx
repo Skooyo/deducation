@@ -62,7 +62,7 @@ const CoursePage = ({ params: { id } ,searchParams }: SearchParamProps) => {
           {!isEditing && (
             <div
               dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(value) }}
-              className="text-white ck-content px-10 pt-4 z-1 relatve"
+              className="text-white text-xl ck-content px-10 pt-4 z-1 relatve m-2"
             />
           )}
         </div>

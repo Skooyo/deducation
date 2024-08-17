@@ -5,7 +5,7 @@ import FormItem from '@/components/FormItem';
 import { uploadJSON } from '@/utils/ipfs';
 import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { routeros } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+// import { routeros } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 import { ICourse } from '@/models/course.model';
 
 const CreatePage = () => {
