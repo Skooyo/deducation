@@ -26,7 +26,7 @@ const CoursePage = ({ params: { id } ,searchParams }: SearchParamProps) => {
   const router = useRouter();
   // const searchParams = useSearchParams();
   const page = searchParams?.page as string || "1";
-  let num_of_pages = "1";
+  let num_of_pages = 1;
   
   const [isLastPage, setIsLastPage] = useState<boolean>(false)
   const [isEditing, setIsEditing] = useState<boolean>(false)
@@ -46,7 +46,7 @@ const CoursePage = ({ params: { id } ,searchParams }: SearchParamProps) => {
     const newUrl = createNewUrl({ newParam: "page", newValue: page});
     setValue(course?.pages[Number(page) - 1].content ?? "");
     setObjValue(course?.pages[Number(page) - 1].content ?? {})
-    num_of_pages = course?.pages.length
+    num_of_pages = course?.pages.length ?? 1
     setIsLastPage(num_of_pages == page)
 
     router.push(newUrl);

@@ -3,6 +3,7 @@
 import { useCallback, Dispatch, SetStateAction } from 'react'
 import { useDropzone } from '@uploadthing/react/hooks'
 import { generateClientDropzoneAccept } from 'uploadthing/client'
+import uploadFile from '@/utils/ipfs'
 
 import { convertFileToUrl } from '@/utils/fileToUrl'
 
@@ -10,12 +11,14 @@ type BountyUploadProps = {
   onFieldChange: (url: string) => void
   imageUrl: string
   setFiles: Dispatch<SetStateAction<File[]>>
+  uploadToIpfs: any
 }
 
-const BountyUpload = ({ imageUrl, onFieldChange, setFiles }: BountyUploadProps) => {
+const BountyUpload = ({ imageUrl, onFieldChange, setFiles, uploadToIpfs}: BountyUploadProps) => {
   const onDrop = useCallback((acceptedFiles: File[]) => {
     setFiles(acceptedFiles)
     onFieldChange(convertFileToUrl(acceptedFiles[0]))
+    uploadToIpfs(acceptedFiles[0])    
   }, [])
 
   const { getRootProps, getInputProps } = useDropzone({

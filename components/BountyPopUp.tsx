@@ -4,6 +4,7 @@ import { Styles } from 'react-modal';
 import { useState } from "react";
 import BountyUpload from '@/components/BountyUpload'
 import { IBounty } from '@/models/bounty.model';
+import uploadFile from '@/utils/ipfs'
 
 
 type ModalProps = {
@@ -14,6 +15,8 @@ type ModalProps = {
 
 const BountyPopUp = ({ bounty, isOpen, setIsOpen }: ModalProps) => {
   const [files, setFiles] = useState<File[]>([]);
+  const [isUploading, setIsUploading] = useState(false);
+  
   const [formData, setFormData] = useState({
     title: "",
     files: [] as File[],
@@ -41,6 +44,15 @@ const BountyPopUp = ({ bounty, isOpen, setIsOpen }: ModalProps) => {
     },
   };
 
+  const uploadToIpfs = async (file) => {
+    console.log("Uploading file to ipfs");
+    console.log(file);
+    setIsUploading(true);
+    // const hash = uploadFile(file);
+    // console.log("IPFS Hash is:", hash);
+    setIsUploading(false);
+  }
+
   return (
     <div className="gap-4 flex-col">
       <Modal
@@ -55,6 +67,7 @@ const BountyPopUp = ({ bounty, isOpen, setIsOpen }: ModalProps) => {
           <BountyUpload
             imageUrl = {formData.imageUrl}
             setFiles={setFiles}
+            uploadToIpfs = {uploadToIpfs}
             onFieldChange={(url: string) => setFormData(prevState =>({ ...prevState, imageUrl: url}))}
             />
             <div className="flex gap-10 justify-between items-center">
