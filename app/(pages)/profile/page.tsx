@@ -6,9 +6,9 @@ import { SearchParamProps } from "@/types";
 import { getAllCourses } from "@/actions/course.actions";
 import CourseCard from "@/components/CourseCard";
 
-const ProfilePage = ({}) => {
+const ProfilePage = ({searchParams}: SearchParamProps) => {
 
-  const { data, page, totalPages } = getAllCourses({ query: "Course" });
+  const { data, page, totalPages } = getAllCourses({ query: query.toString() });
 
     return (
         <main className="flex min-h-screen flex-col items-center justify-between">

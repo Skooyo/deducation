@@ -65,6 +65,7 @@ const CoursePage = ({ params: { id } ,searchParams }: SearchParamProps) => {
           {isEditing && (
             <TextEditor data={value} onDataChanged={setValue} />
           )}
+
           {!isEditing && (objValue.map((data, index) => {
             console.log(data)
             if(data.type == "h3") {
@@ -85,9 +86,7 @@ const CoursePage = ({ params: { id } ,searchParams }: SearchParamProps) => {
               <img src={data.data} width="810" height="405" alt="img" />
               </div>
             )
-          }
-          })
-          )}
+          }}))}
 
           {/* {!isEditing && (
             <div
