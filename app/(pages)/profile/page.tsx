@@ -13,7 +13,7 @@ const ProfilePage = ({}) => {
     return (
         <main className="flex min-h-screen flex-col items-center justify-between">
             <div className="bg-background w-full h-auto p-4 flex justify-center">
-              <div className="bg-background w-2/3 flex-col justify-center items-center
+              <div className="bg-background max-w-[80vw] flex-col justify-center items-center
                border-col rounded-3xl hover:shadow-2xl p-6 outline outline-slate-400">
               
                 <div className="w-full my-4 flex justify-center items-center rounded-lg">
@@ -85,7 +85,7 @@ const ProfilePage = ({}) => {
               </div>
             </div>
 
-            <div className="flex-col w-full justify-center items-center">
+            <div className="flex-col max-w-[80vw] justify-center items-center">
               <div className="flex justify-center">
                 <h1 className="mt-5 mb-3 font-semibold text-4xl items-center">Completed Projects</h1>
               </div>
