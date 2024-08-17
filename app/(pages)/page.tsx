@@ -6,10 +6,8 @@ import { tempCourses, tempBounties } from "../../data/mockData";
 import NavBar from "../../components/NavBar";
 import { SearchParamProps } from "@/types";
 import { useState } from "react";
-import BountyPopUp from "../../components/BountyPopUp";
  
 export default function Home({ searchParams }: SearchParamProps) {
-  const [isModalOpen, setIsModalOpen] = useState(false)
   return (
     <div className="pb-10">
       
@@ -33,14 +31,11 @@ export default function Home({ searchParams }: SearchParamProps) {
           <h1 className="font-semibold text-4xl">Bounties</h1>
           <div className="flex flex-col gap-5">
             {tempBounties.slice(0, 3).map(bounty => (
-              <BountyCard bounty={bounty} key={bounty._id} isOpen={isModalOpen} setIsOpen={setIsModalOpen}/>
+              <BountyCard bounty={bounty} key={bounty._id}/>
             ))}
           </div>
         </div>
       </div>
-
-      <BountyPopUp isOpen = {isModalOpen} setIsOpen = {setIsModalOpen} />
-
     </div>
   );
 }

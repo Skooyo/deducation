@@ -12,7 +12,13 @@ export const tempCourses: ICourse[] = [
       {
         _id: "1",
         title: "Page 1",
-        content:"<h1>Test 1</h1><p>Test paragraph</p><p>Hello world</p><h3>Test 2</h3>",
+        content:"<h1>Introduction</h1><p>Science and education are key drivers of global progress, yet both are hindered by traditional limitations. Science is drifting\
+        from its core mission, and education remains stuck in outdated industrial-age practices.</p><p>There is a need for a paradigm shift in the way educational content \
+        is distributed, as well as in the way scientific advances are disseminated and propagated.</p>\
+          <p>Web 3 technologies offer a solution by decentralizing control and fostering open collaboration, enabling educators and learners to overcome\
+           these challenges. With secure, portable credentials provided by blockchain and the incentive of tokenized learning, Web 3 aligns education with the demands\
+            of a modern, knowledge-based world.</p>\
+          <p>Let’s explore more about how Web3 to be use in education</p>"
       },
       {
         _id: "2",
@@ -349,7 +355,7 @@ export const tempBounties: IBounty[] = [
   {
     _id: "1",
     title: "Bounty 1",
-    description: "This is bounty 1",
+    description: "Design and develop a simple, responsive website that showcases a personal portfolio or a small business. The website should be visually appealing, easy to navigate, and optimized for both desktop and mobile devices.",
     creator: "John Doe",
     contract: "0x1234567890abcdef1234567890abcdef12345678",
     placeholderPic: "https://picsum.photos/1920/1080",

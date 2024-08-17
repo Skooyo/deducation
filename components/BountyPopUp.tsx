@@ -1,15 +1,26 @@
-"use client";
-
 import React from 'react';
 import Modal from 'react-modal';
 import { Styles } from 'react-modal';
+import { useState } from "react";
+import BountyUpload from '@/components/BountyUpload'
+import { IBounty } from '@/models/bounty.model';
+
 
 type ModalProps = {
+  bounty: IBounty
   isOpen: boolean;
   setIsOpen: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
-const BountyPopUp = ({ isOpen, setIsOpen }: ModalProps) => {
+const BountyPopUp = ({ bounty, isOpen, setIsOpen }: ModalProps) => {
+  const [files, setFiles] = useState<File[]>([]);
+  const [formData, setFormData] = useState({
+    title: "",
+    files: [] as File[],
+    imageUrl: "",
+    description: "",
+  });
+
   const customStyles = {
     overlay: {
       backgroundColor: 'rgba(0, 0, 0, 0.6)',
@@ -18,13 +29,15 @@ const BountyPopUp = ({ isOpen, setIsOpen }: ModalProps) => {
       top: '50%',
       left: '50%',
       right: 'auto',
-      width: "2/3",
+      width: "1/2",
+      maxWidth: '800px',
       bottom: 'auto',
       marginRight: '-50%',
       transform: 'translate(-50%, -50%)',
       backgroundColor: "#181818",
       border: "none",
       padding: "0px",
+      boxShadow: '0 0 10px 5px rgba(128, 128, 128, 0.5)', // Add this line for gradient gray outline
     },
   };
 
@@ -36,19 +49,22 @@ const BountyPopUp = ({ isOpen, setIsOpen }: ModalProps) => {
         onRequestClose={() => setIsOpen(false)}
         style={customStyles as Styles}
       >
-        <div className="p-5 h-full flex flex-col items-center justify-center gap-3">
-          <h1 className="font-semibold p-2 text-center">Please connect your wallet.</h1>
-          <button
-            type="button"
-            className="bg-red-500 text-background rounded-lg font-semibold p-3"
-            onClick={() => {
-              console.log('Close button clicked');
-              setIsOpen(false);
-              console.log(isOpen);
-            }}
-          >
-            Close
-          </button>
+        <div className="p-5 h-full flex flex-col items-center justify-center gap-5">
+          <h1 className="text-2xl font-semibold line-clamp-1">{bounty.title}</h1>
+          <h1 className="text-xl text-center">{bounty.description}</h1>
+          <BountyUpload
+            imageUrl = {formData.imageUrl}
+            setFiles={setFiles}
+            onFieldChange={(url: string) => setFormData(prevState =>({ ...prevState, imageUrl: url}))}
+            />
+            <button
+              type="button"
+              className="items-center justify-center p-2 py-3 bg-gradient-to-tl from-[#ba3030] to-[#df1b1b]
+              text-background rounded-lg glow-button font-semibold"
+              onClick={() => setIsOpen(false)}
+            >
+              Cancel
+            </button>
         </div>
       </Modal>
     </div>
