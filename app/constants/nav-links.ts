@@ -9,4 +9,8 @@ export const links = [
   { name: 'Bounties', 
     href: '/bounties', 
   },
+  {
+    name: 'Profile',
+    href: '/profile'
+  },
 ];
