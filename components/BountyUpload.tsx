@@ -3,7 +3,7 @@
 import { useCallback, Dispatch, SetStateAction } from 'react'
 import { useDropzone } from '@uploadthing/react/hooks'
 import { generateClientDropzoneAccept } from 'uploadthing/client'
-import { uploadFile } from '@/utils/ipfs'
+// import { uploadFile } from '@/utils/ipfs'
 
 import { convertFileToUrl } from '@/utils/fileToUrl'
 

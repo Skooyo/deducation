@@ -48,8 +48,8 @@ const BountyPopUp = ({ bounty, isOpen, setIsOpen }: ModalProps) => {
     console.log("Uploading file to ipfs");
     console.log(file);
     setIsUploading(true);
-    // const hash = uploadFile(file);
-    // console.log("IPFS Hash is:", hash);
+    const hash = uploadFile(file);
+    console.log("IPFS Hash is:", hash);
     setIsUploading(false);
   }
 
@@ -73,8 +73,9 @@ const BountyPopUp = ({ bounty, isOpen, setIsOpen }: ModalProps) => {
             <div className="flex gap-10 justify-between items-center">
             <button
               onClick={() => setIsOpen(false)}
-              className="items-center justify-center px-4 py-3 bg-gradient-to-tl bg-primary
-              text-background rounded-lg glow-button font-semibold"
+              className={`items-center justify-center px-4 py-3 bg-gradient-to-tl ${isUploading ? "bg-[#4c4c4f]" : "bg-primary" }
+              text-background rounded-lg glow-button font-semibold`}
+              disabled={isUploading}
             >
               Submit
             </button>

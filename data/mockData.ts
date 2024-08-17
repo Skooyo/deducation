@@ -8,8 +8,7 @@ export const tempCourses: ICourse[] = [
     description: "Learn about Blockchain through this introductory course!",
     coverImageUrl: "https://picsum.photos/1920/1080",
     creator: "1",
-    pages: [
-      {
+    pages: [{
         _id: "1",
         title: "Introduction to Blockchain Technology",
         content:[{
@@ -142,12 +141,188 @@ export const tempCourses: ICourse[] = [
   },
   {
     _id: "2",
-    title: "Course 2",
-    description: "Test very long descriptioh asodhf iodasfiosdahfiosadjho s sdhklhsadl hklsadhfklsdahf iosdifhsioah klsahfksdh khsaf y8weyripnclkasxcb cmczxn iowyrb8ownkmzdaiohs",
+    title: "Web3 for Education",
+    description: "Learn about Web3 for Education through this course!",
     coverImageUrl: "https://picsum.photos/1920/1080",
     creator: "1",
-    pages: [],
-    category: "Cyber Security",
+    pages: [{
+        _id: "1",
+        title: "Introduction",
+        content:[{
+          type:"h1",
+          data:"Introduction"
+        },
+        {
+          type:"h3",
+          data:"Science and education are key drivers of global progress, yet both are hindered by traditional limitations. Science is drifting from its core mission, and education remains stuck in outdated industrial-age practices. "
+        },
+        {
+          type:"h3",
+          data:'There is a need for a paradigm shift in the way educational content is distributed, as well as in the way scientific advances are disseminated and propagated.'
+        },
+        {
+          type:"h3",
+          data:`Web 3 technologies offer a solution by decentralizing control and fostering open collaboration, enabling educators and learners to overcome these challenges. With secure, portable credentials provided by blockchain and the incentive of tokenized learning, Web 3 aligns education with the demands of a modern, knowledge-based world. `
+        },
+        {
+          type:"h3",
+          data:'Let’s explore more about how Web3 to be use in education'
+        },
+        {
+          type:"img",
+          data:`https://i.imgur.com/lk8lps7.png`
+        }],
+      },
+      {
+        _id: "2",
+        title: "Problem in Education",
+        content:[{
+          type:"h1",
+          data:"Problem in Education"
+        },
+        {
+          type:"h3",
+          data:"Despite significant strides in digital learning, the education sector is plagued by several key issues:"
+        },
+        {
+          type:"h2",
+          data:'Inequitable Access:'
+        },
+        {
+          type:"h3",
+          data:`Higher education, create financial burdens for students and families, leading to issues such as student debt.`
+        },
+        {
+          type:"h2",
+          data:`Credential Recognition:`
+        },
+        {
+          type:"h3",
+          data:`The recognition of credentials across borders remains a challenge, limiting the mobility and opportunities for learners.`
+        },
+        {
+          type:"h2",
+          data:`Centralized Control:`
+        },
+        {
+          type:"h3",
+          data:`Traditional education systems are often controlled by centralized institutions, which can lead to a lack of diversity in curricula and limited innovation.`
+        }],
+      },
+      {
+        _id: "3",
+        title: "How Web3 Changes Education",
+        content:[{
+          type:"h1",
+          data:"How Web3 Changes Education"
+        },
+        {
+          type:"h3",
+          data:"Despite significant strides in digital learning, the education sector is plagued by several key issues:"
+        },
+        {
+          type:"h3",
+          data:"Web 3, characterized by decentralization, blockchain technology, and smart contracts, offers transformative solutions for the education sector:" 
+        },
+        {
+          type:"h2",
+          data:"Decentralized Learning Platforms:"
+        },
+        {
+          type:"h3",
+          data:"Web 3 enables the creation of decentralized education platforms where learners can access content from anywhere in the world without the need for a central authority."
+        },
+        {
+          type:"h2",
+          data:"Secure and Portable Digital Credentials:"
+        },
+        {
+          type:"h3",
+          data:"Blockchain technology allows for the creation of secure, verifiable, and portable digital credentials that are recognized globally, eliminating the need for third-party verification."
+        },
+        {
+          type:"h2",
+          data:"Tokenized Learning:"
+        },
+        {
+          type:"h3",
+          data:"Blockchain can be used to create tokenized incentives for learning, where students earn tokens for completing courses, which can be redeemed for various benefits or even traded."
+        }],
+      },
+      {
+        _id: "4",
+        title: "Easy Access to Education",
+        content:[{
+          type:"h1",
+          data:"Easy Access to Education"
+        },
+        {
+          type:"h2",
+          data:"Global Reach:"
+        },
+        {
+          type:"h3",
+          data:"Deducation breaks down geographical barriers, allowing learners from anywhere in the world to access quality education. This reduces the disparities in education access between different regions."
+        },
+        {
+          type:"h2",
+          data:"Affordability:"
+        },
+        {
+          type:"h3",
+          data:"By utilizing blockchain and decentralized technologies, the cost of education can be significantly reduced, making it more accessible to a broader audience."
+        }]
+      },
+      {
+        _id: "5",
+        title: "Empowered Learners",
+        content:[{
+          type:"h1",
+          data:"Empowered Learners"
+        },
+        {
+          type:"h2",
+          data:"Ownership of Credentials:"
+        },
+        {
+          type:"h3",
+          data:"Learners have complete control over their educational records and credentials, which are securely stored on the blockchain. This ensures that their achievements are recognized globally without the need for third-party verification."
+        },
+        {
+          type:"h2",
+          data:"Customized Learning Paths:"
+        },
+        {
+          type:"h3",
+          data:"Decentralized platforms offer the flexibility to design personalized learning journeys, catering to individual interests and career goals."
+        }],
+      },
+      {
+        _id: "6",
+        title: "Innovative Learning Models",
+        content:[{
+          type:"h1",
+          data:"Innovative Learning Models"
+        },
+        {
+          type:"h2",
+          data:"Tokenized Learning:"
+        },
+        {
+          type:"h3",
+          data:"Learners can earn tokens for completing courses, which can be used for further education, certifications, or even exchanged for goods and services. This model incentivizes continuous learning and engagement."
+        },
+        {
+          type:"h2",
+          data:"Decentralized Content Creation:"
+        },
+        {
+          type:"h3",
+          data:`Educators and content creators can contribute to the platform, offering a diverse range of courses and materials, leading to a richer and more varied learning experience.`
+        }]
+      },
+    ],
+    category: "Blockchain",
   },
   {
     _id: "3",

@@ -4,7 +4,6 @@ import { IBounty } from '@/models/bounty.model';
 import React, { useState } from 'react';
 import Image from 'next/image';
 import BountyPopUp from './BountyPopUp';
-import UserModal from './UserModal';
 
 type BountyCardProps = {
     bounty: IBounty;

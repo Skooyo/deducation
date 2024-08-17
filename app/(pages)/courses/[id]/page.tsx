@@ -86,6 +86,12 @@ const CoursePage = ({ params: { id } ,searchParams }: SearchParamProps) => {
                 {React.createElement(data.type, {}, data.data)}
               </div>
             )
+          } else if (data.type == "h2") {
+            return(
+              <div key={index} className="text-white m-5 px-40 text-xl font-semibold">
+                {React.createElement(data.type, {}, data.data)}
+              </div>
+            )
           } else {
             return(
               <div className="m-2 items-center justify-center w-full flex">
@@ -93,6 +99,8 @@ const CoursePage = ({ params: { id } ,searchParams }: SearchParamProps) => {
               </div>
             )
           }}))}
+
+          <div className="p-8"></div>
 
           {isLastPage && (
             <Link 
