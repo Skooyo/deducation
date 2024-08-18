@@ -35,7 +35,7 @@ const BountyCard = ({ bounty }: BountyCardProps) => {
                     />
 
                 {/* text */}
-                <div className="flex flex-col justify-between w-full p-4">
+                <div className="flex flex-col justify-between w-full h-[160px] p-4">
                     <h1 className="text-xl font-semibold line-clamp-1">{bounty.title}</h1>
                     <p>By {bounty.creator}</p>
                     <p className="text-sm line-clamp-2">{bounty.description}</p>
