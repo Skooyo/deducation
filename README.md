@@ -1,5 +1,7 @@
 # Deducation
 
+![](public/deducation.png)
+
 Deducation is a decentralized learning protocol that connects students, teachers, and industries.
 
 We strive to solve education problem by:
@@ -10,6 +12,8 @@ We strive to solve education problem by:
 
 ## Aptos Smart Contract
 
+![](public/architecture.png)
+
 Smart Contract:
 - bounty.move: Manages Bounty Initialization
 - course.move: Manage Course Initialization
@@ -17,7 +21,7 @@ Smart Contract:
 - learn_token.move: Utility token of deducation ($LEARN)
 - user.move: Manage User & Certificate Initialization
 
-Check out the Smart Contract here: [https://explorer.aptoslabs.com/account/0x40e80ab1a052677c01e512d65eff6f535d5c421101973d49b789c3a1047feb5f/modules/code/user?network=testnet](https://explorer.aptoslabs.com/account/0x40e80ab1a052677c01e512d65eff6f535d5c421101973d49b789c3a1047feb5f/modules/code/user?network=testnet)
+Check out the Smart Contract here: [https://explorer.aptoslabs.com/account/0x40e80ab1a052677c01e512d65eff6f535d5c421101973d49b789c3a1047feb5f/transactions?network=testnet](https://explorer.aptoslabs.com/account/0x40e80ab1a052677c01e512d65eff6f535d5c421101973d49b789c3a1047feb5f/transactions?network=testnet)
 
 ## Getting Started
 
