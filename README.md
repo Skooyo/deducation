@@ -23,7 +23,7 @@ Smart Contract:
 
 Check out the Smart Contract here: [https://explorer.aptoslabs.com/account/0x40e80ab1a052677c01e512d65eff6f535d5c421101973d49b789c3a1047feb5f/transactions?network=testnet](https://explorer.aptoslabs.com/account/0x40e80ab1a052677c01e512d65eff6f535d5c421101973d49b789c3a1047feb5f/transactions?network=testnet)
 
-## Getting Started
+## Getting Started For Developers
 
 First, run the development server:
 
