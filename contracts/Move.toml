@@ -4,7 +4,7 @@ version = "1.0.0"
 authors = []
 
 [addresses]
-deducation = 'e4198489f17637ef9ea0613c22e3abed48bbd3bdff4ca62e351f2a39585dfd3a'
+deducation = '40e80ab1a052677c01e512d65eff6f535d5c421101973d49b789c3a1047feb5f'
 
 [dev-addresses]
 
