@@ -21,13 +21,13 @@ const ProfilePage = ({searchParams}: SearchParamProps) => {
                   
                   <div className="">
                     <Image 
-                      src="/bean.png" width={500} height={500}  alt="test" 
+                      src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg" width={500} height={500}  alt="test" 
                       className="h-48 w-48 rounded-full my-4 m-5"/>
                   </div>
                   
                   <div className="py-2 flex-col w-auto">
-                      <div className="font-semibold text-4xl ml-4 mr-24">Skooy</div>
-                      <div className="text-xl inline-flex items-center ml-4">@Skooyo</div>
+                      <div className="font-semibold text-4xl ml-4 mr-24">Student</div>
+                      <div className="text-xl inline-flex items-center ml-4">@student</div>
                       
     
                       <div className="w-2/5 flex justify-start ml-1">
@@ -86,14 +86,17 @@ const ProfilePage = ({searchParams}: SearchParamProps) => {
               </div>
             </div>
 
-            <div className="flex-col max-w-[80vw] justify-center items-center">
+            <div className="flex-col max-w-[80vw] justify-center items-center gap-5">
               <div className="flex justify-center">
-                <h1 className="mt-5 mb-3 font-semibold text-4xl items-center">Completed Projects</h1>
+                <h1 className="mt-5 mb-3 font-semibold text-4xl items-center">Completed Courses</h1>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 m-5">
-                {data.map(course => (
-                  <ProjectCard course={course} key={course._id} />
-                  ))}
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 m-5 pb-10">
+                <ProjectCard imageSrc="https://ivory-vivacious-rooster-272.mypinata.cloud/ipfs/QmT8wq5SkAbEbSWZSeowW9BhryNuw5stq6MSF6MnbgQzYV" title="Introduction to Blockchain" />
+                <ProjectCard imageSrc="https://ivory-vivacious-rooster-272.mypinata.cloud/ipfs/QmT8wq5SkAbEbSWZSeowW9BhryNuw5stq6MSF6MnbgQzYV" title="Web3 for Education" />
+              </div>
+              <h1 className="flex justify-center w-full mt-5 mb-3 font-semibold text-4xl items-center">Project Completion</h1>
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 m-5 pb-10">
+                <ProjectCard imageSrc="https://ivory-vivacious-rooster-272.mypinata.cloud/ipfs/QmP1SbF9LG2o652WRhrYBuvudsuveBEDfpm2vroiA1UDxX" title="Aptos Smart Contract" />
               </div>
             </div>
         </main>

@@ -100,7 +100,7 @@ const CoursePage = ({ params: { id } ,searchParams }: SearchParamProps) => {
             )
           }}))}
 
-          <div className="p-8"></div>
+          <div className="p-2 pb-20"></div>
 
           {isLastPage && (
             <Link 
@@ -114,6 +114,7 @@ const CoursePage = ({ params: { id } ,searchParams }: SearchParamProps) => {
               </button>
             </Link>
           )}
+          <div className="p-8"></div>
 
           {/* {!isEditing && (
             <div

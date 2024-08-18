@@ -22,7 +22,7 @@ const AllCoursePage = ({ searchParams }: SearchParamProps) => {
       <div className="flex flex-col gap-10 2xl:max-w-[80vw] px-10">
         <div className="md:flex-row flex flex-col justify-between items-center mt-2">
           <h1 className="text-4xl font-semibold mt-5">Browse Courses</h1>
-          <Link className="bg-primary text-background rounded-lg p-3 flex items-center mt-5" href="/courses/create">Create New Course</Link>
+          {/* <Link className="bg-primary text-background rounded-lg p-3 flex items-center mt-5" href="/courses/create">Create New Course</Link> */}
           <div className="flex items-center mt-5 w-full md:max-w-[350px]">
               <SearchBar placeholder="Search for a course..."/>
             {/* Filter */}

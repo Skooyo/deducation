@@ -48,8 +48,9 @@ const BountyPopUp = ({ bounty, isOpen, setIsOpen }: ModalProps) => {
     console.log("Uploading file to ipfs");
     console.log(file);
     setIsUploading(true);
-    const hash = uploadFile(file);
-    console.log("IPFS Hash is:", hash);
+    const resData = await uploadFile(file);
+    const imageLink = `${process.env.NEXT_PUBLIC_GATEWAY_URL}/ipfs/${resData.IpfsHash}`
+    console.log("IPFS Hash is:", imageLink);
     setIsUploading(false);
   }
 
