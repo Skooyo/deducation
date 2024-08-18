@@ -644,7 +644,7 @@ export const tempBounties: IBounty[] = [
     placeholderPic: "https://picsum.photos/1920/1080",
     reward: 50,
     currency: "$LEARN",
-    dueDate: new Date(2024, 7, 4),
+    dueDate: new Date(2026, 7, 4),
   },
   {
     _id: "3",
@@ -655,7 +655,7 @@ export const tempBounties: IBounty[] = [
     placeholderPic: "https://picsum.photos/1920/1080",
     reward: 50,
     currency: "$LEARN",
-    dueDate: new Date(2024, 8, 30),
+    dueDate: new Date(2026, 8, 30),
   },
   {
     _id: "4",
@@ -666,7 +666,7 @@ export const tempBounties: IBounty[] = [
     placeholderPic: "https://picsum.photos/1920/1080",
     reward: 50,
     currency: "$LEARN",
-    dueDate: new Date(),
+    dueDate: new Date(2027, 1, 1),
   },
   {
     _id: "5",
@@ -677,7 +677,7 @@ export const tempBounties: IBounty[] = [
     placeholderPic: "https://picsum.photos/1920/1080",
     reward: 50,
     currency: "$LEARN",
-    dueDate: new Date(),
+    dueDate: new Date(2025, 11, 31),
   },
   {
     _id: "6",
@@ -688,6 +688,6 @@ export const tempBounties: IBounty[] = [
     placeholderPic: "https://picsum.photos/1920/1080",
     reward: 50,
     currency: "$LEARN",
-    dueDate: new Date(),
+    dueDate: new Date(2025, 11, 31),
   },
 ];
