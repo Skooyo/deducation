@@ -26,8 +26,8 @@ const ProfilePage = ({searchParams}: SearchParamProps) => {
                   </div>
                   
                   <div className="py-2 flex-col w-auto">
-                      <div className="font-semibold text-4xl ml-4 mr-24">Student</div>
-                      <div className="text-xl inline-flex items-center ml-4">@student</div>
+                      <div className="font-semibold text-4xl ml-4 mr-24">Daven Japhis Tan</div>
+                      <div className="text-xl inline-flex items-center ml-4">@daven_jt</div>
                       
     
                       <div className="w-2/5 flex justify-start ml-1">

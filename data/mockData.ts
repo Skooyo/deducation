@@ -659,6 +659,7 @@ export const tempBounties: IBounty[] = [
     _id: "2",
     title: "FrontEnd Design",
     description: "Build the frontend example of an educational page",
+    creator: "Jane Doe",
     contract: "0x1234567890abcdef1234567890abcdef12345679",
     placeholderPic: "https://bs-uploads.toptal.io/blackfish-uploads/components/open_graph_image/8957638/og_image/optimized/op-Ten-Front-End-Design-Rules-For-Developers_Luke-Social-33a3a7c9b759fdaa22973906070f8065.png",
     reward: 50,
