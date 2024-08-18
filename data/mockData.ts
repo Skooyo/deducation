@@ -632,7 +632,7 @@ export const tempBounties: IBounty[] = [
     contract: "0x1234567890abcdef1234567890abcdef12345678",
     placeholderPic: "https://picsum.photos/1920/1080",
     reward: 50,
-    currency: "APT",
+    currency: "$LEARN",
     dueDate: new Date(2025, 11, 31),
   },
   {
@@ -643,7 +643,7 @@ export const tempBounties: IBounty[] = [
     contract: "0x1234567890abcdef1234567890abcdef12345679",
     placeholderPic: "https://picsum.photos/1920/1080",
     reward: 50,
-    currency: "APT",
+    currency: "$LEARN",
     dueDate: new Date(2024, 7, 4),
   },
   {
@@ -654,7 +654,7 @@ export const tempBounties: IBounty[] = [
     contract: "0x1234567890abcdef1234567890abcdef12345689",
     placeholderPic: "https://picsum.photos/1920/1080",
     reward: 50,
-    currency: "APT",
+    currency: "$LEARN",
     dueDate: new Date(2024, 8, 30),
   },
   {
@@ -665,7 +665,7 @@ export const tempBounties: IBounty[] = [
     contract: "0x1234567890abcdef1234567890abcdef12345688",
     placeholderPic: "https://picsum.photos/1920/1080",
     reward: 50,
-    currency: "APT",
+    currency: "$LEARN",
     dueDate: new Date(),
   },
   {
@@ -676,7 +676,7 @@ export const tempBounties: IBounty[] = [
     contract: "0x1234567890abcdef1234567890abcdef12345988",
     placeholderPic: "https://picsum.photos/1920/1080",
     reward: 50,
-    currency: "APT",
+    currency: "$LEARN",
     dueDate: new Date(),
   },
   {
@@ -687,7 +687,7 @@ export const tempBounties: IBounty[] = [
     contract: "0x1234567890abcdef1234567890abcdef12345989",
     placeholderPic: "https://picsum.photos/1920/1080",
     reward: 50,
-    currency: "APT",
+    currency: "$LEARN",
     dueDate: new Date(),
   },
 ];

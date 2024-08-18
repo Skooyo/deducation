@@ -4,7 +4,6 @@ import SocialLinks from "@/components/SocialLinks";
 import ProjectCard from "@/components/ProjectCard";
 import { SearchParamProps } from "@/types";
 import { getAllCourses } from "@/actions/course.actions";
-import CourseCard from "@/components/CourseCard";
 
 const ProfilePage = ({searchParams}: SearchParamProps) => {
 
@@ -27,8 +26,8 @@ const ProfilePage = ({searchParams}: SearchParamProps) => {
                   </div>
                   
                   <div className="py-2 flex-col w-auto">
-                      <div className="font-semibold text-4xl ml-4 mr-24">Honore de balzac</div>
-                      <div className="text-xl inline-flex items-center ml-4">@Kaiz404</div>
+                      <div className="font-semibold text-4xl ml-4 mr-24">Skooy</div>
+                      <div className="text-xl inline-flex items-center ml-4">@Skooyo</div>
                       
     
                       <div className="w-2/5 flex justify-start ml-1">
