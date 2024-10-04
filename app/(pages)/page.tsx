@@ -6,32 +6,31 @@ import { tempCourses, tempBounties } from "../../data/mockData";
 import NavBar from "../../components/NavBar";
 import { SearchParamProps } from "@/types";
 import { useState } from "react";
- 
+
 export default function Home({ searchParams }: SearchParamProps) {
   return (
     <div className="pb-10">
-      
-    <div className="flex flex-col px-72 items-center justify-center h-2/3">
-      <NavBar /> 
+      <div className="flex flex-col px-72 items-center justify-center h-2/3">
+        <NavBar />
 
-      {/* Courses */}
-      <div className="flex flex-col gap-6 bg-blue">
-        <h1 className="font-semibold text-4xl">Courses</h1>
-        <div className="flex gap-5">
-          {tempCourses.slice(0, 3).map(course => (
-            <CourseCard course={course} key={course._id} />
-          ))}
+        {/* Courses */}
+        <div className="flex flex-col gap-6 bg-blue">
+          <h1 className="font-semibold text-4xl tracking-wide">Courses</h1>
+          <div className="flex gap-5">
+            {tempCourses.slice(0, 3).map((course) => (
+              <CourseCard course={course} key={course._id} />
+            ))}
+          </div>
         </div>
       </div>
-    </div>
 
       {/* Bounties */}
-      <div className="flex flex-col gap-[100px] px-80 h-2/3 pt-8">
+      <div className="flex flex-col gap-[100px] px-80 h-2/3 pt-8 mt-16">
         <div className="flex flex-col gap-6 bg-blue">
-          <h1 className="font-semibold text-4xl">Bounties</h1>
+          <h1 className="font-semibold text-4xl tracking-wide">Bounties</h1>
           <div className="flex flex-col gap-5">
-            {tempBounties.slice(0, 3).map(bounty => (
-              <BountyCard bounty={bounty} key={bounty._id}/>
+            {tempBounties.slice(0, 3).map((bounty) => (
+              <BountyCard bounty={bounty} key={bounty._id} />
             ))}
           </div>
         </div>
